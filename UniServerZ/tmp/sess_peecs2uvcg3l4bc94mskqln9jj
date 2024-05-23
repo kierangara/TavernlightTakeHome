@@ -1,0 +1,60 @@
+ PMA_token |s:32:"564b322c66742529515b79675c402255"; HMAC_secret |s:16:"7++GPr,c{]b@WET8";browser_access_time|a:1:{s:7:"default";i:1716343388;}relation|a:1:{i:1;a:41:{s:7:"version";s:5:"5.2.1";s:4:"user";s:4:"root";s:2:"db";s:10:"phpmyadmin";s:8:"bookmark";s:13:"pma__bookmark";s:15:"central_columns";s:20:"pma__central_columns";s:11:"column_info";s:16:"pma__column_info";s:17:"designer_settings";s:22:"pma__designer_settings";s:16:"export_templates";s:21:"pma__export_templates";s:8:"favorite";s:13:"pma__favorite";s:7:"history";s:12:"pma__history";s:16:"navigationhiding";s:21:"pma__navigationhiding";s:9:"pdf_pages";s:14:"pma__pdf_pages";s:6:"recent";s:11:"pma__recent";s:8:"relation";s:13:"pma__relation";s:13:"savedsearches";s:18:"pma__savedsearches";s:12:"table_coords";s:17:"pma__table_coords";s:10:"table_info";s:15:"pma__table_info";s:13:"table_uiprefs";s:18:"pma__table_uiprefs";s:8:"tracking";s:13:"pma__tracking";s:10:"userconfig";s:15:"pma__userconfig";s:10:"usergroups";s:15:"pma__usergroups";s:5:"users";s:10:"pma__users";s:12:"bookmarkwork";b:1;s:8:"mimework";b:1;s:18:"centralcolumnswork";b:1;s:8:"commwork";b:1;s:9:"menuswork";b:1;s:20:"designersettingswork";b:1;s:11:"displaywork";b:1;s:19:"exporttemplateswork";b:1;s:12:"favoritework";b:1;s:7:"navwork";b:1;s:7:"pdfwork";b:1;s:10:"recentwork";b:1;s:7:"relwork";b:1;s:17:"savedsearcheswork";b:1;s:11:"historywork";b:1;s:12:"trackingwork";b:1;s:11:"uiprefswork";b:1;s:14:"userconfigwork";b:1;s:8:"allworks";b:1;}}tmpval|a:14:{s:14:"favoriteTables";a:1:{i:1;a:0:{}}s:12:"recentTables";a:1:{i:1;a:0:{}}s:18:"table_limit_offset";i:0;s:21:"table_limit_offset_db";s:19:"tavernlighttakehome";s:5:"query";a:10:{s:32:"eb5c596a7cdfba240351584222159b0b";a:8:{s:3:"sql";s:225:"CREATE TABLE IF NOT EXISTS `player_spells` (
+  `player_id` int NOT NULL,
+  `name` varchar(255) NOT NULL,
+  FOREIGN KEY (`player_id`) REFERENCES `players`(`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:300;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"9fce10ff5d228c193fdd7e4da93b3633";a:8:{s:3:"sql";s:322:"CREATE TABLE IF NOT EXISTS `player_storage` (
+  `player_id` int NOT NULL DEFAULT '0',
+  `key` int unsigned NOT NULL DEFAULT '0',
+  `value` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`player_id`,`key`),
+  FOREIGN KEY (`player_id`) REFERENCES `players`(`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:300;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"bf5e483c5a6fbbe173b09dbc61043529";a:8:{s:3:"sql";s:203:"CREATE TABLE IF NOT EXISTS `server_config` (
+  `config` varchar(50) NOT NULL,
+  `value` varchar(256) NOT NULL DEFAULT '',
+  PRIMARY KEY `config` (`config`)
+) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:300;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"710ab0ad723095e53a48f25abc333ffb";a:8:{s:3:"sql";s:216:"CREATE TABLE IF NOT EXISTS `tile_store` (
+  `house_id` int NOT NULL,
+  `data` longblob NOT NULL,
+  FOREIGN KEY (`house_id`) REFERENCES `houses` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:300;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"4850c445e21a02778c37f6c20fbff7da";a:8:{s:3:"sql";s:312:"CREATE TABLE IF NOT EXISTS `towns` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `posx` int NOT NULL DEFAULT '0',
+  `posy` int NOT NULL DEFAULT '0',
+  `posz` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:300;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"aed109a5df435051c2866534f850a823";a:8:{s:3:"sql";s:139:"INSERT INTO `server_config` (`config`, `value`) VALUES ('db_version', '29'), ('motd_hash', ''), ('motd_num', '0'), ('players_record', '0');";s:12:"repeat_cells";i:100;s:8:"max_rows";i:300;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"f12487bd6946275a789b574fbdcec9bc";a:8:{s:3:"sql";s:42:"DROP TRIGGER IF EXISTS `ondelete_players`;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:300;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"5b7af8c6f12453e3559363fecdca8b24";a:8:{s:3:"sql";s:41:"DROP TRIGGER IF EXISTS `oncreate_guilds`;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:300;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"d20f312bfb9f9bcdcac73a2421410ccf";a:8:{s:3:"sql";s:150:"CREATE TRIGGER `ondelete_players` BEFORE DELETE ON `players`
+ FOR EACH ROW BEGIN
+    UPDATE `houses` SET `owner` = 0 WHERE `owner` = OLD.`id`;
+END;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:300;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"74c0c91d72b21fd0eedd54b33d8217b1";a:8:{s:3:"sql";s:376:"CREATE TRIGGER `oncreate_guilds` AFTER INSERT ON `guilds`
+ FOR EACH ROW BEGIN
+    INSERT INTO `guild_ranks` (`name`, `level`, `guild_id`) VALUES ('the Leader', 3, NEW.`id`);
+    INSERT INTO `guild_ranks` (`name`, `level`, `guild_id`) VALUES ('a Vice-Leader', 2, NEW.`id`);
+    INSERT INTO `guild_ranks` (`name`, `level`, `guild_id`) VALUES ('a Member', 1, NEW.`id`);
+END;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:300;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}}s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;s:12:"display_blob";b:0;s:19:"hide_transformation";b:0;s:3:"pos";i:0;s:8:"max_rows";i:300;s:12:"repeat_cells";i:100;}two_factor_check|b:1;cache|a:3:{s:8:"server_1";a:3:{s:15:"userprefs_mtime";i:1716343305;s:14:"userprefs_type";s:2:"db";s:12:"config_mtime";i:1588251309;}s:13:"server_1_root";a:15:{s:17:"is_create_db_priv";b:1;s:14:"is_reload_priv";b:1;s:12:"db_to_create";s:0:"";s:30:"dbs_where_create_table_allowed";a:1:{i:0;s:1:"*";}s:11:"dbs_to_test";b:0;s:9:"proc_priv";b:1;s:10:"table_priv";b:1;s:8:"col_priv";b:1;s:7:"db_priv";b:1;s:11:"binary_logs";a:2:{s:13:"binlog.000001";a:3:{s:8:"Log_name";s:13:"binlog.000001";s:9:"File_size";s:4:"1133";s:9:"Encrypted";s:2:"No";}s:13:"binlog.000002";a:3:{s:8:"Log_name";s:13:"binlog.000002";s:9:"File_size";s:3:"157";s:9:"Encrypted";s:2:"No";}}s:18:"menu-levels-server";a:13:{s:9:"databases";s:9:"Databases";s:3:"sql";s:3:"SQL";s:6:"status";s:6:"Status";s:6:"rights";s:5:"Users";s:6:"export";s:6:"Export";s:6:"import";s:6:"Import";s:8:"settings";s:8:"Settings";s:6:"binlog";s:10:"Binary log";s:11:"replication";s:11:"Replication";s:4:"vars";s:9:"Variables";s:7:"charset";s:8:"Charsets";s:7:"plugins";s:7:"Plugins";s:6:"engine";s:7:"Engines";}s:14:"menu-levels-db";a:14:{s:9:"structure";s:9:"Structure";s:3:"sql";s:3:"SQL";s:6:"search";s:6:"Search";s:5:"query";s:5:"Query";s:6:"export";s:6:"Export";s:6:"import";s:6:"Import";s:9:"operation";s:10:"Operations";s:10:"privileges";s:10:"Privileges";s:8:"routines";s:8:"Routines";s:6:"events";s:6:"Events";s:8:"triggers";s:8:"Triggers";s:8:"tracking";s:8:"Tracking";s:8:"designer";s:8:"Designer";s:15:"central_columns";s:15:"Central columns";}s:12:"is_superuser";b:1;s:14:"mysql_cur_user";s:14:"root@localhost";s:12:"is_grantuser";b:1;}s:13:"version_check";a:2:{s:8:"response";s:411:"{
+    "version": "5.2.1",
+    "date": "2023-02-08",
+    "releases": [
+        {
+            "version": "5.2.1",
+            "date": "2023-02-08",
+            "php_versions": ">=7.2,<8.3",
+            "mysql_versions": ">=5.5"
+        },
+        {
+            "version": "4.9.11",
+            "date": "2023-02-08",
+            "php_versions": ">=5.5,<8.0",
+            "mysql_versions": ">=5.5"
+        }
+    ]
+}";s:9:"timestamp";i:1716343305;}}git_location|N;is_git_revision|b:0;ConfigFile1|a:6:{s:7:"ShowAll";b:1;s:7:"MaxRows";i:300;s:6:"Export";a:5:{s:8:"onserver";b:1;s:19:"file_template_table";s:24:"__TABLE__-table_%Y-%m-%d";s:22:"file_template_database";s:18:"__DB__-db_%Y-%m-%d";s:20:"file_template_server";s:25:"__SERVER__-mysql_%Y-%m-%d";s:12:"csv_enclosed";s:6:"&quot;";}s:26:"DefaultConnectionCollation";s:15:"utf8_general_ci";s:7:"Console";a:1:{s:4:"Mode";s:8:"collapse";}s:7:"Servers";a:1:{i:1;a:2:{s:7:"only_db";s:0:"";s:7:"hide_db";s:0:"";}}}debug|a:0:{}flashMessages|a:0:{}__upload_status|a:1:{s:7:"handler";s:47:"PhpMyAdmin\Plugins\Import\Upload\UploadNoplugin";}Import_message|a:2:{s:7:"message";s:207:"<div class="alert alert-success" role="alert">
+  <img src="themes/dot.gif" title="" alt="" class="icon ic_s_success"> <em>Import has been successfully finished, 34 queries executed.</em> (schema.sql)
+</div>
+";s:11:"go_back_url";s:55:"index.php?route=/database/import&db=tavernlighttakehome";}is_multi_query|b:1;sql_history|a:1:{i:0;a:3:{s:2:"db";s:19:"tavernlighttakehome";s:5:"table";s:0:"";s:8:"sqlquery";s:376:"CREATE TRIGGER `oncreate_guilds` AFTER INSERT ON `guilds`
+ FOR EACH ROW BEGIN
+    INSERT INTO `guild_ranks` (`name`, `level`, `guild_id`) VALUES ('the Leader', 3, NEW.`id`);
+    INSERT INTO `guild_ranks` (`name`, `level`, `guild_id`) VALUES ('a Vice-Leader', 2, NEW.`id`);
+    INSERT INTO `guild_ranks` (`name`, `level`, `guild_id`) VALUES ('a Member', 1, NEW.`id`);
+END;";}}errors|a:0:{}
