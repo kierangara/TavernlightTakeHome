@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\data",
+    "\\data\\chatchannels",
+    "\\data\\chatchannels\\scripts",
+    "\\data\\events",
+    "\\data\\events\\scripts",
+    "\\data\\globalevents",
+    "\\data\\globalevents\\scripts",
+    "\\data\\spells",
+    "\\data\\spells\\scripts",
+    "\\data\\spells\\scripts\\attack"
+  ],
+  "SelectedNode": "\\data\\spells\\scripts\\attack\\eternal_winter.lua",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,5 +1,57 @@
 --Pre-made areas
 
+--Question 5 Diamond areas
+--Areas are formatted longer to resolve issue where need two
+--ones side by side to get tornado to show up when using 2 as caster location
+--Using 3 to mark caster location forced tornado to be on caster location
+--which I wanted to avoid as the video does not have
+--This forced the right side to be shifted instead of lining up with the caster
+--All area mappings are mirrored compared to how they appear in game
+
+--The 4 stages of the Ice Tornado effect for question 5
+AREA_DIAMOND_STAGE1 = {
+	{0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 1, 1, 0, 0, 0, 0, 0, 0},
+	{1, 1, 0, 0, 2, 0, 0, 1, 1},
+	{0, 1, 1, 0, 0, 0, 0, 0, 0},
+	{0, 0, 1, 1, 0, 0, 0, 0, 0},
+	{0, 0, 0, 1, 1, 0, 0, 0, 0}
+}
+
+AREA_DIAMOND_STAGE2 = {
+	{0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 1, 1, 0, 1, 1, 0, 0},
+	{0, 0, 0, 0, 0, 0, 1, 1, 0},
+	{0, 0, 0, 0, 2, 0, 0, 0, 0},
+	{0, 0, 0, 1, 1, 0, 1, 1, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0}
+}
+
+--Note: The demo video double-maps one of the tornados so it stays longer
+--This is replicated by remapping one tornado here that was originally
+--mapped in Stage 1. It is the bottom left in this array (top right in game)
+AREA_DIAMOND_STAGE3 = {
+	{0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 1, 1, 2, 1, 1, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 1, 1, 0, 1, 1, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0}
+}
+
+AREA_DIAMOND_STAGE4 = {
+	{0, 0, 0, 1, 1, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 1, 1, 0, 0, 0, 0},
+	{0, 0, 0, 0, 2, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0}
+}
+
 --Waves
 AREA_WAVE3 = {
 	{1, 1, 1},
