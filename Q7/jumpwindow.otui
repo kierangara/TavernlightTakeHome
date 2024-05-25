@@ -1,0 +1,11 @@
+MainWindow
+  id: jumpWindowMain
+  size: 500 400
+  @onEscape: toggleJumpWindow()
+
+  Button
+    id: jumpButton
+    !text: tr('Jump!')
+    width: 80
+    height: 40
+    @onClick: jumpButtonPressed()

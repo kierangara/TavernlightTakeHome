@@ -1,0 +1,9 @@
+Module
+  name: game_jumpwindow
+  description: Tavernlight take home question 7
+  author: kierangara
+  website: https://github.com/kierangara/TavernlightTakeHome
+  sandboxed: true
+  scripts: [ jumpwindow.lua ]
+  @onLoad: init()
+  @onUnload: terminate()
